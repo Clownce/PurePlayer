@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/qss">
+        <file>qpuremusic.qss</file>
+    </qresource>
+    <qresource prefix="/QPureMusic">
+        <file>Resources/back.png</file>
+        <file>Resources/backdown.png</file>
+        <file>Resources/btnClose.png</file>
+        <file>Resources/btnCurrentItemInLoop.png</file>
+        <file>Resources/btnCurrentItemOnce.png</file>
+        <file>Resources/btnLast.png</file>
+        <file>Resources/btnLoop.png</file>
+        <file>Resources/btnNext.png</file>
+        <file>Resources/btnPause.png</file>
+        <file>Resources/btnPlay.png</file>
+        <file>Resources/btnRandom.png</file>
+        <file>Resources/btnSet.png</file>
+        <file>Resources/btnVolum.png</file>
+        <file>Resources/Close.png</file>
+        <file>Resources/CloseDown.png</file>
+        <file>Resources/CloseHover.png</file>
+        <file>Resources/ICON.ico</file>
+        <file>Resources/menuBack.png</file>
+        <file>Resources/playBack.png</file>
+        <file>Resources/btnCloseHover.png</file>
+        <file>Resources/btnCurrentItemInLoopHover.png</file>
+        <file>Resources/btnCurrentItemOnceHover.png</file>
+        <file>Resources/btnLastHover.png</file>
+        <file>Resources/btnLoopHover.png</file>
+        <file>Resources/btnNextHover.png</file>
+        <file>Resources/btnPauseHover.png</file>
+        <file>Resources/btnPlayHover.png</file>
+        <file>Resources/btnRandomHover.png</file>
+        <file>Resources/btnSetHover.png</file>
+        <file>Resources/btnVolumHover.png</file>
+        <file>Resources/btnNoVolum.png</file>
+        <file>Resources/btnNoVolumHover.png</file>
+        <file>Resources/btnFile.png</file>
+        <file>Resources/btnFileHover.png</file>
+        <file>Resources/playlist.png</file>
+        <file>Resources/playlistdown.png</file>
+        <file>Resources/playListTableBack.png</file>
+        <file>Resources/psd9397.png</file>
+        <file>Resources/psd9398.png</file>
+    </qresource>
+</RCC>

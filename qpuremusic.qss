@@ -1,0 +1,299 @@
+﻿QGroupBox{
+border:none;
+}
+
+QGroupBox#PlayGroupBox,#PlayListMenuGroupBox{
+border-image:url(:/QPureMusic/Resources/playBack.png);
+}
+
+QGraphicsView#BackGraphic{
+border-image: url(:/QPureMusic/Resources/back.png);
+}
+
+QMyGraphicsView#MenuGraphic{
+border-image:url(:/QPureMusic/Resources/menuBack.png);
+}
+
+QListWidget#NavListWidget{
+border-image:url(:/QPureMusic/Resources/playBack.png);
+}
+
+QPushButton#CLCloseButton{
+border-image: url(:/QPureMusic/Resources/Close.png);
+}
+
+QPushButton#CLCloseButton:hover{
+border-image:url(:/QPureMusic/Resources/CloseHover.png);
+}  
+
+QPushButton#CLCloseButton:pressed{
+border-image:url(:/QPureMusic/Resources/CloseDown.png);
+} 
+
+QPushButton#CloseButton{
+border-image: url(:/QPureMusic/Resources/btnClose.png);
+}
+
+QPushButton#CloseButton:hover{
+border-image: url(:/QPureMusic/Resources/btnCloseHover.png);
+}
+
+QPushButton#CloseButton:pressed{
+border-image: url(:/QPureMusic/Resources/btnCloseHover.png);
+}
+
+QPushButton#PlayListCloseButton{
+border-image: url(:/QPureMusic/Resources/btnClose.png);
+}
+
+QPushButton#PlayListCloseButton:hover{
+border-image: url(:/QPureMusic/Resources/btnCloseHover.png);
+}
+
+QPushButton#PlayListCloseButton:pressed{
+border-image: url(:/QPureMusic/Resources/btnCloseHover.png);
+}
+
+QPushButton#OpenMusicFileButton{
+border-image: url(:/QPureMusic/Resources/btnFile.png);
+}
+
+QPushButton#OpenMusicFileButton:hover{
+border-image: url(:/QPureMusic/Resources/btnFileHover.png);
+}
+
+QPushButton#OpenMusicFileButton:pressed{
+border-image: url(:/QPureMusic/Resources/btnFileHover.png);
+}
+
+QPushButton#PlayButton{ 
+border-image: url(:/QPureMusic/Resources/btnPlay.png);
+}
+
+QPushButton#PlayButton:hover{  
+border-image:url(:/QPureMusic/Resources/btnPlayHover.png);
+}  
+
+QPushButton#PlayButton:pressed{  
+border-image:url(:/QPureMusic/Resources/btnPlayHover.png);
+} 
+
+QPushButton#PauseButton{ 
+border-image: url(:/QPureMusic/Resources/btnPause.png);
+}
+
+QPushButton#PauseButton:hover{  
+border-image:url(:/QPureMusic/Resources/btnPauseHover.png);
+}  
+
+QPushButton#PauseButton:pressed{  
+border-image:url(:/QPureMusic/Resources/btnPauseHover.png);
+} 
+
+QPushButton#SetButton{ 
+border-image: url(:/QPureMusic/Resources/playlist.png);
+}
+
+QPushButton#SetButton:hover{  
+border-image:url(:/QPureMusic/Resources/playlistdown.png);
+}
+
+QCheckBox#SetButton::indicator {
+width: 25px;
+height: 25px;
+}
+
+QCheckBox#SetButton::indicator::unchecked {
+border-image: url(:/QPureMusic/Resources/playlist.png)
+}
+
+QCheckBox#SetButton::indicator::checked {
+border-image:url(:/QPureMusic/Resources/playlistdown.png);
+}
+
+QPushButton#SetButton:pressed{  
+border-image:url(:/QPureMusic/Resources/playlistdown.png);
+} 
+
+QPushButton#LastButton{ 
+border-image: url(:/QPureMusic/Resources/btnLast.png);
+}
+
+QPushButton#LastButton:hover{  
+border-image:url(:/QPureMusic/Resources/btnLastHover.png);
+}  
+
+QPushButton#LastButton:pressed{  
+border-image:url(:/QPureMusic/Resources/btnLastHover.png);
+} 
+
+QPushButton#NextButton{ 
+border-image: url(:/QPureMusic/Resources/btnNext.png);
+}
+
+QPushButton#NextButton:hover{  
+border-image:url(:/QPureMusic/Resources/btnNextHover.png);
+}  
+
+QPushButton#NextButton:pressed{  
+border-image:url(:/QPureMusic/Resources/btnNextHover.png);
+} 
+
+QPushButton#VolumButton{ 
+border-image: url(:/QPureMusic/Resources/btnVolum.png);
+}
+
+QPushButton#VolumButton:hover{
+border-image:url(:/QPureMusic/Resources/btnVolumHover.png);
+}  
+
+QPushButton#VolumButton:pressed{  
+border-image:url(:/QPureMusic/Resources/btnVolumHover.png);
+} 
+
+QPushButton#noVolumButton{
+border-image: url(:/QPureMusic/Resources/btnNoVolum.png);
+}
+
+QPushButton#noVolumButton:hover{
+border-image:url(:/QPureMusic/Resources/btnNoVolumHover.png);
+}
+
+QPushButton#noVolumButton:pressed{
+border-image:url(:/QPureMusic/Resources/btnNoVolumHover.png);
+}
+
+QPushButton#ModeButton{
+border-image:url(:/QPureMusic/Resources/btnRandom.png);
+}
+
+QPushButton#ModeButton:hover{
+border-image:url(:/QPureMusic/Resources/btnRandomHover.png);
+}
+
+QPushButton#ModeButton:pressed{
+border-image:url(:/QPureMusic/Resources/btnRandomHover.png);
+}
+
+QSlider::groove:horizontal,QSlider::add-page:horizontal{
+height:8px;
+border-radius:3px;
+background:#ACACAC;
+}
+
+QSlider::sub-page:horizontal{
+height:8px;
+border-radius:3px;
+background:#436EEE;
+}
+
+QSlider::handle:horizontal{
+width:13px;
+margin-top:-3px;
+margin-bottom:-3px;
+border-radius:6px;
+background:qradialgradient(spread:pad,cx:0.5,cy:0.5,radius:0.5,fx:0.5,fy:0.5,stop:0.6 #FFFFFF,stop:0.8 #436EEE);
+}
+
+QSlider::groove:vertical,QSlider::sub-page:vertical{
+width:8px;
+border-radius:3px;
+background:#ACACAC;
+}
+
+QSlider::add-page:vertical{
+width:8px;
+border-radius:3px;
+background:#436EEE;
+}
+
+
+QSlider::handle:vertical{
+height:13px;
+margin-left:-2px;
+margin-right:-3px;
+border-radius:6px;
+background:qradialgradient(spread:pad,cx:0.5,cy:0.5,radius:0.5,fx:0.5,fy:0.5,stop:0.6 #FFFFFF,stop:0.8 #436EEE);
+} 
+
+QLabel#Volumlabel,#CurrentTimeLabel,#TotalTimeLabel{
+font: 75 10pt "黑体";
+font-weight:bold;
+color:#DBDBDB;
+}
+
+QLabel#NameLbl,#SingerLbl{
+font-weight:bold;
+color:#DBDBDB;
+}
+
+QLabel#NameLbl{
+font: 75 18pt "黑体";
+}
+
+QListWidget#NavListWidget{
+font: 75 14pt "黑体";
+text-align:center;
+color:#DBDBDB;
+}
+QLabel#MenuLabel{
+font: 75 10pt "黑体";
+font-weight:bold;
+color:#575757;
+}
+
+QLabel#PlayListLabel{
+font: 75 12pt "黑体";
+font-weight:bold;
+color:#DBDBDB;
+}
+
+QLabel#MainNameLabel{
+font: 75 16pt "Buxton Sketch";
+font-weight:bold;
+color:#FDF5E6;
+}
+
+QListWidget#m_FavList{
+font: 75 11pt "黑体";
+text-align:center;
+color:#A8A8A8;
+background-color: #3B3B3B;
+}
+
+QTableWidget#SongTableWidget{
+color: #A8A8A8;
+background-image: url(:/QPureMusic/Resources/playListTableBack.png);
+alternate-background-color: #3B3B3B;
+selection-background-color: #436EEE;
+}
+
+QTableWidget#tableWid,#m_FavTable{
+color: #A8A8A8;
+background: transparent;
+alternate-background-color: #3B3B3B;
+selection-background-color: #436EEE;
+}
+
+QHeaderView::section{
+color: #A8A8A8;
+background-color:#3B3B3B;
+}
+QGraphicsView#DiscGraphics{
+background-color:transparent;
+}
+
+QScrollBar{
+background:transparent;
+}
+
+QTextEdit#LrcText{
+background-color:transparent;
+font: 55 11pt "黑体";
+color:#DBDBDB;
+}
+
+QGraphicsView#CoverGraphics{
+border-image: url(:/QPureMusic/Resources/psd9398.png);
+}
+

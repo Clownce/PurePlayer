@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QCloseDlg</class>
+ <widget class="QDialog" name="QCloseDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>251</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QCloseDlg</string>
+  </property>
+  <widget class="QGraphicsView" name="BackGraphic">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>251</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/QPureMusic/Resources/backdown.png);</string>
+   </property>
+  </widget>
+  <widget class="Line" name="MenuLine">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="CloseRadioGroupBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>191</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>171</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="CloseLayout">
+     <item>
+      <widget class="QRadioButton" name="MinRadio">
+       <property name="styleSheet">
+        <string notr="true">font: 75 11pt &quot;黑体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>最小化到系统窗口</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="CloseRadio">
+       <property name="styleSheet">
+        <string notr="true">font: 75 11pt &quot;黑体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>关闭客户端</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="OkBtnGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>172</y>
+     <width>73</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QDialogButtonBox" name="OKButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="standardButtons">
+     <set>QDialogButtonBox::Ok</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="MenuLabel">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>5</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 11pt &quot;黑体&quot;;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string>关闭选项</string>
+   </property>
+  </widget>
+  <widget class="Line" name="OKLine">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>155</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QMyGraphicsView" name="MenuGraphic">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>251</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/QPureMusic/Resources/backdown.png);</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="CloseGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>4</y>
+     <width>33</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="CLCloseButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>33</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <zorder>BackGraphic</zorder>
+  <zorder>MenuGraphic</zorder>
+  <zorder>MenuLine</zorder>
+  <zorder>CloseRadioGroupBox</zorder>
+  <zorder>OkBtnGroupBox</zorder>
+  <zorder>MenuLabel</zorder>
+  <zorder>OKLine</zorder>
+  <zorder>CloseGroupBox</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QMyGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>qmygraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>CLCloseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QCloseDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>-63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OKButton</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>QCloseDlg</receiver>
+   <slot>on_okBtnClick(QAbstractButton*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_okBtnClick(QAbstractButton*)</slot>
+ </slots>
+</ui>

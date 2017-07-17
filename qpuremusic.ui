@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QPureMusicClass</class>
+ <widget class="QMainWindow" name="QPureMusicClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QPureMusic</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="BackGraphic">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>900</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="PlayGroupBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>520</y>
+      <width>900</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QGroupBox" name="PlayBtnGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>163</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="NextButton">
+      <property name="geometry">
+       <rect>
+        <x>115</x>
+        <y>30</y>
+        <width>32</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PlayButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>64</x>
+        <y>20</y>
+        <width>32</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LastButton">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>30</y>
+        <width>32</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="PlaySliderGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>162</x>
+       <y>0</y>
+       <width>461</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <widget class="QMySlider" name="PlaySlider">
+      <property name="geometry">
+       <rect>
+        <x>62</x>
+        <y>30</y>
+        <width>341</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TotalTimeLabel">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>34</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>00:00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CurrentTimeLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>34</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>00:00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="PlayVolumGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>622</x>
+       <y>0</y>
+       <width>159</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="VolumButton">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>27</y>
+        <width>25</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QMySlider" name="VolumSlider">
+      <property name="geometry">
+       <rect>
+        <x>43</x>
+        <y>30</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="singleStep">
+       <number>0</number>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>50</number>
+      </property>
+      <property name="tracking">
+       <bool>true</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="invertedControls">
+       <bool>false</bool>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::NoTicks</enum>
+      </property>
+      <property name="tickInterval">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Volumlabel">
+      <property name="geometry">
+       <rect>
+        <x>124</x>
+        <y>30</y>
+        <width>29</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="PlaySetGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>0</y>
+       <width>120</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <widget class="QCheckBox" name="SetButton">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>26</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ModeButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>26</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LrcButton">
+      <property name="geometry">
+       <rect>
+        <x>89</x>
+        <y>26</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>词</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <zorder>PlaySetGroupBox</zorder>
+    <zorder>PlayVolumGroupBox</zorder>
+    <zorder>PlaySliderGroupBox</zorder>
+    <zorder>PlayBtnGroupBox</zorder>
+   </widget>
+   <widget class="QFrame" name="MenuHLine">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>59</y>
+      <width>900</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="PlayHLine">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>520</y>
+      <width>900</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="PlayListFrame">
+    <property name="geometry">
+     <rect>
+      <x>548</x>
+      <y>182</y>
+      <width>351</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <widget class="QGroupBox" name="PlayListMenuGroupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>351</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <widget class="QPushButton" name="PlayListCloseButton">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OpenMusicFileButton">
+      <property name="geometry">
+       <rect>
+        <x>283</x>
+        <y>10</y>
+        <width>30</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PlayListLabel">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>3</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>播放列表</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="PlayListHLine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>39</y>
+       <width>351</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="SongTableWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>351</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustIgnored</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideRight</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="cornerButtonEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>250</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>歌曲</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>歌手</string>
+      </property>
+     </column>
+    </widget>
+    <zorder>PlayListMenuGroupBox</zorder>
+    <zorder>SongTableWidget</zorder>
+    <zorder>PlayListHLine</zorder>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>901</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="mainLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+    </layout>
+   </widget>
+   <widget class="QGraphicsView" name="MenuIcongraphic">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/QPureMusic/Resources/ICON.ico);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MainNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>43</x>
+      <y>11</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Pure Music</string>
+    </property>
+   </widget>
+   <widget class="QMyGraphicsView" name="MenuGraphic">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>900</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CloseButton">
+    <property name="geometry">
+     <rect>
+      <x>856</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>BackGraphic</zorder>
+   <zorder>PlayHLine</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>MenuHLine</zorder>
+   <zorder>PlayListFrame</zorder>
+   <zorder>MenuGraphic</zorder>
+   <zorder>MenuIcongraphic</zorder>
+   <zorder>MainNameLabel</zorder>
+   <zorder>CloseButton</zorder>
+   <zorder>PlayGroupBox</zorder>
+  </widget>
+  <action name="action_Quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_SongList">
+   <property name="text">
+    <string>显示/隐藏播放列表</string>
+   </property>
+   <property name="toolTip">
+    <string>显示/隐藏播放列表</string>
+   </property>
+  </action>
+  <action name="action_Last">
+   <property name="text">
+    <string>上一首</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="action_Next">
+   <property name="text">
+    <string>下一首</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="action_Play">
+   <property name="text">
+    <string>播放</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F5</string>
+   </property>
+  </action>
+  <action name="action_Stop">
+   <property name="text">
+    <string>停止</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F2</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>关于我们</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Support">
+   <property name="text">
+    <string>关于Pure Music</string>
+   </property>
+   <property name="toolTip">
+    <string>关于Pure Music</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F1</string>
+   </property>
+  </action>
+  <action name="action_Import">
+   <property name="text">
+    <string>导入本地歌曲</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QMyGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>qmygraphicsview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QMySlider</class>
+   <extends>QSlider</extends>
+   <header>qmyslider.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>LastButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>playLast()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>27</x>
+     <y>561</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>22</x>
+     <y>640</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PlayButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>playMusic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>552</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>685</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>NextButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>playNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>563</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>665</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VolumButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>SetVolum()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>555</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>648</x>
+     <y>605</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CloseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>868</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>866</x>
+     <y>-58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>SetDlgisHide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>793</x>
+     <y>555</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>790</x>
+     <y>680</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OpenMusicFileButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>importSongs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>846</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>913</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PlayListCloseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QPureMusicClass</receiver>
+   <slot>CloseSetDlg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>878</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>909</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>SetVolum()</slot>
+  <slot>playMusic()</slot>
+  <slot>VolumChange(int)</slot>
+  <slot>SetDlgisHide()</slot>
+  <slot>playLast()</slot>
+  <slot>playNext()</slot>
+  <slot>playListClose()</slot>
+  <slot>importSongs()</slot>
+  <slot>CloseSetDlg()</slot>
+ </slots>
+</ui>

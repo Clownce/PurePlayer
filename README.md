@@ -1,2 +1,2 @@
 # PurePlayer
-A music player by Qt5.5.
+A Music Player by Qt5.5.
